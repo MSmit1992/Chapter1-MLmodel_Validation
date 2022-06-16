@@ -16,4 +16,9 @@ Acceleration data was sampled at a frequency of 30 Hz (raw data). A total of 35 
 # [Step 3: Merge accelerometer and annoted datasets](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%203:%20Merge%20datasets)
 Following step 2, you now have a file for each cat containing the 35 predictor variables. The next step is to merge this data with scored behaviour (annotated) data.
 
-# [Step 4: Prepare behaviour]
+# [Step 4: Prepare datasets](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%204:%20Prepare%20datasets)
+
+
+# [Step 5: Build predictive models](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%205:%20Build%20models)
+
+
