@@ -22,5 +22,5 @@ In this study, two Machine Learning techniques were used to build predictive mod
 - Random Forest
 - Self-Organizing maps
 
-# [Step 5: Use models to predict behaviour]
+# [Step 5: Use models to predict behaviour](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%205:%20Predict%20behaviour)
 
