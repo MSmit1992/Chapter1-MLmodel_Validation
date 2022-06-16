@@ -2,7 +2,7 @@ This folder contains:
 - R Code for Behaviour selection (Select.behaviour.R)
 - R Code for Random forest models (predict.behaviourRF.R)
 - R Code for Self-Organizing Maps models (predict.behaviourSOMS.R)
-- R Data files for each behaviour group a model was built (Folder ['R Dataframes'](https://github.com/MSmit1992/Cat_Accelerometry/blob/main/Step%204:%20Build%20predictive%20models/R%20dataframes))
+- R Data files for each behaviour group a model was built (Folder ['R Dataframes'](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%204:%20Build%20predictive%20models/R%20Dataframes))
 
 # Prepare datasets
 In step 3, all data was merged into a big dataset. The next step is to prepare the data and create dataframes that can be used to build the models.
