@@ -16,7 +16,7 @@ Acceleration data was sampled at a frequency of 30 Hz (raw data). A total of 35 
 # [Step 3: Data preparation](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%203:%20Data%20preparation)
 Following step 2, you now have a file for each cat containing the 35 predictor variables. The next step is to merge this data with scored behaviour (annotated) data.
 
-# [Step 4: Build predictive models]
+# [Step 4: Build predictive models](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%204:%20Build%20predictive%20models)
 Following step 4, you now have the datasets you can use to build the predictive models.
 In this study, two Machine Learning techniques were used to build predictive models:
 - Random Forest
