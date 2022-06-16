@@ -22,3 +22,5 @@ Following step 2, you now have a file for each cat containing the 35 predictor v
 # [Step 5: Build predictive models](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%205:%20Build%20models)
 
 
+# [Step 6: Use models to predict behaviour](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%206:%20Use%20models%20to%20predict%20behaviour)
+
