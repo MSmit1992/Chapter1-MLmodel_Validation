@@ -10,20 +10,17 @@ While wearing the accelerometers, cats were videorecorded. Videorecordings were 
 
 [ActiGraph wGT3X-BT](https://actigraphcorp.com/actigraph-wgt3x-bt/) accelerometers were used.
 
-# [Step 2: Feature Engineering](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%202:%20Feature%20engineering)
+# [Step 2: Feature engineering](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%202:%20Feature%20engineering)
 Acceleration data was sampled at a frequency of 30 Hz (raw data). A total of 35 predictor variabes were derived from the raw x,y,z accelerometer data and summarized into 1 second epochs.
 
-# [Step 3: Merge accelerometer and annoted datasets](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%203:%20Merge%20datasets)
+# [Step 3: Data preparation]
 Following step 2, you now have a file for each cat containing the 35 predictor variables. The next step is to merge this data with scored behaviour (annotated) data.
 
-# [Step 4: Prepare datasets](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%204:%20Prepare%20datasets)
-
-
-# [Step 5: Build predictive models](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%205:%20Build%20models)
+# [Step 4: Build predictive models]
 Following step 4, you now have the datasets you can use to build the predictive models.
 In this study, two Machine Learning techniques were used to build predictive models:
 - Random Forest
 - Self-Organizing maps
 
-# [Step 6: Use models to predict behaviour](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%206:%20Use%20models%20to%20predict%20behaviour)
+# [Step 5: Use models to predict behaviour]
 
