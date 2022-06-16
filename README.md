@@ -8,7 +8,7 @@ For this study, two accelerometers were attached to domestic cats:
 
 While wearing the accelerometers, cats were videorecorded. Videorecordings were used to score the behaviour of cats.
 
-ActiGraph wGT3X-BT accelerometers were used.
+[ActiGraph wGT3X-BT](https://actigraphcorp.com/actigraph-wgt3x-bt/) accelerometers were used.
 
 # [Step 2: Feature Engineering](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%202:%20Feature%20engineering)
 Acceleration data was sampled at a frequency of 30 Hz (raw data). A total of 35 predictor variabes were derived from the raw x,y,z data and summarized into 1 second epochs.
