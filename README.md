@@ -13,7 +13,7 @@ While wearing the accelerometers, cats were videorecorded. Videorecordings were 
 # [Step 2: Feature engineering](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%202:%20Feature%20engineering)
 Acceleration data was sampled at a frequency of 30 Hz (raw data). A total of 35 predictor variabes were derived from the raw x,y,z accelerometer data and summarized into 1 second epochs.
 
-# [Step 3: Data preparation]
+# [Step 3: Data preparation](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%203:%20Data%20preparation)
 Following step 2, you now have a file for each cat containing the 35 predictor variables. The next step is to merge this data with scored behaviour (annotated) data.
 
 # [Step 4: Build predictive models]
