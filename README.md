@@ -8,4 +8,4 @@ For this study, two accelerometers were attached to domestic cats:
 
 ActiGraph wGT3X-BT accelerometers were used.
 
-#[Step 2: Feature Engineering](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%202:%20Feature%20engineering)
+# [Step 2: Feature Engineering](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%202:%20Feature%20engineering)
