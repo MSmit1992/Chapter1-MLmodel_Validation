@@ -16,3 +16,7 @@ The accelerometer dataset (containing the predictor variables) includes 7 days w
 The file containing the annotated data for all cats was trimmed using the times defined in the meta data file.
 ## (5) Merge meta data and accerelometer data
 The file containing the accelerometer data for all cats was trimmed using the times defined in the meta data file.
+## (6) Merge trimmed annotated and trimmed accelerometer data
+The trimmed datasets (step 4 and step 5) are merged to create a complete dataset that includes both annotated and accelerometer data.
+## (7) Preparation complete (merged) dataset
+The complete dataset is prepared and changed from a wide to a long format.
