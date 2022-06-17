@@ -27,3 +27,4 @@ To build and assess the performance of a model, the dataset is divided into a tr
 ## (6) Model building
 Using the training and test datasets, the model is built.
 ## (7) Model evaluation
+A confusion matrix is made to 
