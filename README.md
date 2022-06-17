@@ -24,5 +24,5 @@ In this study, two Machine Learning techniques were used to build predictive mod
 
 # [Step 5: Use models to predict behaviour](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%205:%20Predict%20behaviour)
 
-# Rater Reliability
+# [Rater reliability](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Rater%20reliability)
 
