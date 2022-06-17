@@ -10,6 +10,8 @@ While wearing the accelerometers, cats were videorecorded. Videorecordings were 
 
 [ActiGraph wGT3X-BT](https://actigraphcorp.com/actigraph-wgt3x-bt/) accelerometers were used.
 
+# Step 2: Rater reliability
+
 # [Step 2: Feature engineering](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%202:%20Feature%20engineering)
 Acceleration data was sampled at a frequency of 30 Hz (raw data). A total of 35 predictor variabes were derived from the raw x,y,z accelerometer data and summarized into 1 second epochs.
 
