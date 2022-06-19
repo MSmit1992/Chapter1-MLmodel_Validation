@@ -8,7 +8,7 @@ This folder contains:
 In step 3, all data was merged into a big dataset. The next step is to prepare the data and create dataframes that can be used to build the models.
 
 # Steps
-Steps 2 to 4 are repeated multiple times (see step 2 for more information)
+Steps 2 to 7 are repeated multiple times (see step 2 for more information)
 ## (1) Remove behaviours not observed
 Not all behaviours were observed in the videorecordings. Behaviours that were not observed and where cats were out of sight, were removed from the dataset. 
 ## (2) Merge behaviours
@@ -27,4 +27,4 @@ To build and assess the performance of a model, the dataset is divided into a tr
 ## (6) Model building
 Using the training and test datasets, the model is built.
 ## (7) Model evaluation
-A confusion matrix is made to 
+A confusion matrix is made to be able to describe the performance of the predictive model
