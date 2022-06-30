@@ -1,7 +1,7 @@
 # Cat_Accelerometry
 Buiding predictive models to predict cat behaviour using accelerometers
 
-*A lot of the code used was published on GitHub by [cclemente](https://github.com/cclemente) in the repository [Animal_accelerometry](https://github.com/cclemente/Animal_accelerometry.git). Changes to the code were made to get it working for this specific project*
+*A lot of the code used for the Self-Organizing maps was published on GitHub by [cclemente](https://github.com/cclemente) in the repository [Animal_accelerometry](https://github.com/cclemente/Animal_accelerometry.git). Changes to the code were made to get it working for this specific project*
 
 # Step 1: Data collection
 For this study, two accelerometers were attached to domestic cats:
