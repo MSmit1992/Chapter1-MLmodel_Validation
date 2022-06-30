@@ -8,7 +8,7 @@ This folder contains:
 In step 3, all data was merged into a big dataset. The next step is to prepare the data and create dataframes that can be used to build the models.
 
 # Steps
-Steps 2 to 7 are repeated multiple times (see step 2 for more information)
+Steps 2 to 7 are repeated multiple times (see step 2 on merging behaviours for more information)
 ## (1) Remove behaviours not observed
 Not all behaviours were observed in the videorecordings. Behaviours that were not observed and where cats were out of sight, were removed from the dataset. 
 ## (2) Merge behaviours
