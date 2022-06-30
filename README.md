@@ -1,6 +1,8 @@
 # Cat_Accelerometry
 Buiding predictive models to predict cat behaviour using accelerometers
 
+A lot of the code used was published on github by [cclemente](https://github.com/cclemente) in the repository [Animal_accelerometry](https://github.com/cclemente/Animal_accelerometry.git). Some things were adjusted, but definitely have look at that project!
+
 # Step 1: Data collection
 For this study, two accelerometers were attached to domestic cats:
 - Ventrally attached to a collar
