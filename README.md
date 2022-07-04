@@ -1,3 +1,5 @@
+**THIS REPOSITORY IS NOT FINISHED YET!**
+
 # Cat_Accelerometry
 Buiding predictive models to predict cat behaviour using accelerometers
 
