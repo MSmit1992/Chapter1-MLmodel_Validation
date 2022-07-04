@@ -2,6 +2,7 @@ This folder contains:
 - R Code for behavioural prediction (predict.behaviour.R)
 - Excel file containing the meta data to give you an idea (Predict_Meta.csv)
 - R files of the predictive models for the collar and harness
+
 *The files containing the predictor variables are to big to be uploaded to GitHub*
 
 # (1) Preperation meta data
