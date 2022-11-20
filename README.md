@@ -28,7 +28,7 @@ In this study, two Machine Learning techniques were used to build predictive mod
 # [Step 5: Use models to predict behaviour](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Step%205:%20Predict%20behaviour)
 With the models built in step 4, you can now use the model to predict the behaviour using the 32 predictor variables derived from the raw accelerometer data
 
-# [Step 6: Model comparison](https://github.com/MSmit1992/Cat_Accelerometry/blob/main/Step%206:%20Compare%20Models)
+# [Step 6: Comparing models](https://github.com/MSmit1992/Cat_Accelerometry/blob/main/Step%206:%20Compare%20Models)
 The models were compared for the proportions of the behaviours they predicted. This was done by comparing proportional graphs and by a Dirichlet test.
 
 # [Rater reliability](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Rater%20reliability)
