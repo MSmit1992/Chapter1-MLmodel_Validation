@@ -32,4 +32,4 @@ With the models built in step 4, you can now use the model to predict the behavi
 The models were compared for the proportions of the behaviours they predicted. This was done by comparing proportional graphs and by a Dirichlet test.
 
 # [Rater reliability](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Rater%20reliability)
-
+Rater reliability was tested by rewatching some videorecordings and rescoring the behaviour. This second scoring was then compared to the first scoring to determine rater reliability
