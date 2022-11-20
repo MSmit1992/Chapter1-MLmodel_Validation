@@ -13,7 +13,7 @@ For each model, the hourly proportion of each behaviour was determined and plott
 ### 1. Preparation meta data
 A meta file was created to be able to distinguish the different days and to select data within a certain timeframe.
 ### 2. Merge meta data and predicted behaviour data
-The meta data and data containing the behavioural predictions, were merged. Only data within the timeframe specified in the meta data was kept and 24 hour blocks were calculated and renamed as a specific day (1-6)
+The meta data and data containing the behavioural predictions, were merged. Only data within the timeframe specified in the meta data was kept and 24 hour blocks were calculated.
 ### 3. Create sub dataframes
 A seperate dataframe was created for each behavioural round that was done.
 ### 4. Dirichlet Regression
