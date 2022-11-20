@@ -31,5 +31,5 @@ With the models built in step 4, you can now use the model to predict the behavi
 # [Step 6: Comparing models](https://github.com/MSmit1992/Cat_Accelerometry/blob/main/Step%206:%20Compare%20Models)
 The models were compared for the proportions of the behaviours they predicted. This was done by comparing proportional graphs and by a Dirichlet test.
 
-# [Rater reliability](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Rater%20reliability)
+# [Step 7: Rater reliability](https://github.com/MSmit1992/Cat_Accelerometry/tree/main/Rater%20reliability)
 Rater reliability was tested by rewatching some videorecordings and rescoring the behaviour. This second scoring was then compared to the first scoring to determine rater reliability
