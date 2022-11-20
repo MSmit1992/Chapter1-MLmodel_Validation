@@ -1,6 +1,5 @@
 This folder contains:
 - R Code for behavioural prediction (predict.behaviour.R)
-- Excel file containing the meta data to give you an idea (Predict_Meta.csv)
 
 *The RDATA files containing the predictor variables and the actual models from this study are to big to be uploaded to GitHub*
 
