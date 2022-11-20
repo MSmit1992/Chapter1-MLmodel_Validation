@@ -19,7 +19,7 @@ Each cat wore two accelerometers: one attached to a collar and one attached to a
 1. Collar dataframe, containing the predictor variables from the collar-mounted accelerometer
 2. Harness dataframe, containg the predictor variables from the harness-mounted accelerometer
 ## (4) Create sub dataframes
-For every behaviour group (explained in step 2), a seperate dataframe was created to be able to easily build the models
+For every behaviour group (explained in step 2), a seperate dataframe was created to be able to easily build the models.
 Abundant columns were removed.
 ## (5) Data splitting 2
 To build and assess the performance of a model, the dataset was divided into a training dataset to build the model, and a test dataset to test the model.
