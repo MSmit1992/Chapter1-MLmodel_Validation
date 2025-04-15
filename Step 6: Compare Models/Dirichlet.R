@@ -12,7 +12,7 @@ library(plyr); library(tidyverse); library(splines); library(data.table); librar
 ####################################
 ### STEP 1.1 - PREPARE DATAFRAME ###
 ####################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 load("long.pred.RDATA")
 
@@ -21,14 +21,14 @@ long.pred$hour <- as.POSIXlt(long.pred$Timestamp)$hour
 range(long.pred$hour)
 
 ### SAFE DATAFRAME
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/Proportions/"
+start_path <- "..."
 setwd(paste0(start_path,"Hourly"))
 save(long.pred, file="long.pred.RDATA")
 
 ###################################
 ### STEP 1.2 - ACTIVITY BUDGETS ###
 ###################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/Proportions/"
+start_path <- "..."
 setwd(paste0(start_path,"Hourly"))
 load("long.pred.RDATA")
 ###################
@@ -547,7 +547,7 @@ Model
 #########################################
 # Required input:   - Meta data
 ### PREPARE META DATASET
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/"
+start_path <- "..."
 setwd(paste0(start_path,"meta_data"))
 meta <- read.csv("Budget_Meta2.csv")
 head(meta)
@@ -567,7 +567,7 @@ tz(df$End) <- "UTC"
 
 # Safe meta dataframe
 meta <- df
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path, "Proportions"))
 save(meta, file="meta.RDATA")
 
@@ -576,11 +576,11 @@ save(meta, file="meta.RDATA")
 #######################################################
 ### STEP 2.2 -  MERGE META DATA AND PREDICTION DATA ###
 #######################################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path, "Proportions"))
 load("meta.RDATA")
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 load("long.pred.RDATA")
 
@@ -614,7 +614,7 @@ df2$Cat_id <- as.factor(df2$Cat_id)
 
 ### SAFE DATAFRAME
 Act_bud <- df2
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path, "Proportions"))
 save(Act_bud, file="Activity_Budget.RDATA")
 
@@ -625,7 +625,7 @@ save(Act_bud, file="Activity_Budget.RDATA")
 #########################################
 ### STEP 2.3 -  CREATE SUB DATAFRAMES ###
 #########################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path, "Proportions"))
 load("Activity_Budget.RDATA")
 
@@ -638,7 +638,7 @@ df$Model <- as.factor(df$Model)
 df$Behaviour <- as.factor(df$Behaviour)
 # Safe dataframe
 B1_ab <- df
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/Proportions/"
+start_path <- "..."
 setwd(paste0(start_path, "Daily"))
 save(B1_ab, file="B1_activitybudget.RDATA")
 
@@ -651,7 +651,7 @@ df$Model <- as.factor(df$Model)
 df$Behaviour <- as.factor(df$Behaviour)
 # Safe dataframe
 B2_ab <- df
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/Proportions/"
+start_path <- "..."
 setwd(paste0(start_path, "Daily"))
 save(B2_ab, file="B2_activitybudget.RDATA")
 
@@ -664,7 +664,7 @@ df$Model <- as.factor(df$Model)
 df$Behaviour <- as.factor(df$Behaviour)
 # Safe dataframe
 B3_ab <- df
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/Proportions/"
+start_path <- "..."
 setwd(paste0(start_path, "Daily"))
 save(B3_ab, file="B3_activitybudget.RDATA")
 
@@ -677,7 +677,7 @@ df$Model <- as.factor(df$Model)
 df$Behaviour <- as.factor(df$Behaviour)
 # Safe dataframe
 B4_ab <- df
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/Proportions/"
+start_path <- "..."
 setwd(paste0(start_path, "Daily"))
 save(B4_ab, file="B4_activitybudget.RDATA")
 
@@ -690,7 +690,7 @@ df$Model <- as.factor(df$Model)
 df$Behaviour <- as.factor(df$Behaviour)
 # Safe dataframe
 B5_ab <- df
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/Proportions/"
+start_path <- "..."
 setwd(paste0(start_path, "Daily"))
 save(B5_ab, file="B5_activitybudget.RDATA")
 
@@ -698,7 +698,7 @@ save(B5_ab, file="B5_activitybudget.RDATA")
 #######################################
 ### STEP 2.4 - DIRICHLET REGRESSION ###
 #######################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/Proportions/"
+start_path <- "..."
 setwd(paste0(start_path, "Daily"))
 
 ###################
