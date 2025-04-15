@@ -9,7 +9,7 @@ library(tidyverse); library(qwraps2); library(caret); library(mlbench); library(
 library(psych)
 
 ### LOAD DATA
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/Processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 load("Compl_data.RDATA")
 str(dfCompl)
@@ -54,7 +54,7 @@ levels(dfCompl$Behaviour1) <- c("Climbing","Jumping","Jumping","Rubbing","Trotti
 
 
 ### SAVE COMPLETE DATAFRAME
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 save(dfCompl, file= "Compl_data.RDATA")
 
@@ -63,7 +63,7 @@ save(dfCompl, file= "Compl_data.RDATA")
 ###############################
 ### STEP 3 - DATA SPLITTING ###
 ###############################
-start_path <- "C:/Users/20017948/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/"
+start_path <- "..."
 setwd(paste0(start_path,"processed_data"))
 load("Compl_data.RDATA")
 
@@ -80,7 +80,7 @@ df.harness <- df.harness %>% select(-ODBA15_Mean,-ODBA45_Mean,-ODBA60_Mean,-ODBA
 df.harness <- rename(df.harness, ODBA=ODBA30_Mean)
 
 ### SAVE COLLAR AND HARNESS DATASET
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 save(df.collar, file="df.collar.RDATA")
 save(df.harness, file="df.harness.RDATA")
@@ -91,7 +91,7 @@ save(df.harness, file="df.harness.RDATA")
 ######################################
 
 ### COLLAR
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 load("df.collar.RDATA")
 
@@ -112,7 +112,7 @@ df.collar <- df
 save(df.collar, file="Collar_B1.RDATA")
 
 ### HARNESS
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 load("df.harness.RDATA")
 
@@ -147,7 +147,7 @@ save(df.harness, file="Harness_B1.RDATA")
 ### STEP 5.2 - RF - ROUND 1 ###
 ###############################
 ### BEHAVIOUR 2 - 8
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 
 ### COLLAR
@@ -200,7 +200,7 @@ save(df.harness, file="Harness_B2_RF.RDATA")
 ### STEP 5.2 - RF - ROUND 2 ###
 ###############################
 ### BEHAVIOUR 3 - 6
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 
 ### COLLAR
@@ -240,7 +240,7 @@ save(df.harness, file="Harness_B3_RF.RDATA")
 ### STEP 5.2 - RF - ROUND 3 ###
 ###############################
 ### BEHAVIOUR 4 - 3
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 
 ### COLLAR
@@ -275,7 +275,7 @@ save(df.harness, file="Harness_B4_RF.RDATA")
 ### STEP 5.2 - RF - ROUND 4 ###
 ###############################
 ### BEHAVIOUR 5 - 3
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 
 ### COLLAR
@@ -314,7 +314,7 @@ save(df.harness, file="Harness_B5.RDATA")
 ### STEP 5.2 - SOM - ROUND 1 ###
 ################################
 ### BEHAVIOUR 2 - 10
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 
 ### COLLAR
