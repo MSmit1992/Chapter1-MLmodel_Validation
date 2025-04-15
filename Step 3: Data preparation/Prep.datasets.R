@@ -12,7 +12,7 @@ library(plyr);library(dplyr);library(tidyverse);library(lubridate); library(rgda
 ### STEP 1 - PREPARATION ANNOTATED DATA ###
 ###########################################
 # Required input: - Behaviour scoring data output for each cat - xlsx file
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/"
+start_path <- "..."
 setwd(paste0(start_path,"annotated_data"))
 anno <- list.files(getwd(),pattern="*.xlsx")
 
@@ -75,7 +75,7 @@ df2 <- longanno[rowSums(is.na(longanno))==0,]
 longanno <- df
 
 ### SAVE ANNOTATED DATAFRAME
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 save(longanno, file="anno_data.RDATA")
 
@@ -86,7 +86,7 @@ save(longanno, file="anno_data.RDATA")
 ###############################################
 # Required input: - Acceleration data from collar and halter mounted accelerometers - csv file(s)
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/raw_data/"
+start_path <- "..."
 setwd(paste0(start_path,"FE"))
 accl <- list.files(getwd(),pattern="*.csv")
 
@@ -141,7 +141,7 @@ head(df)
 longaccl <- df
 
 ### SAVE ACCELERATION DATAFRAME
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 save(longaccl, file="accel_data.RDATA")
 
@@ -152,7 +152,7 @@ save(longaccl, file="accel_data.RDATA")
 #######################################
 # Required input:   - Meta data
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/"
+start_path <- "..."
 setwd(paste0(start_path,"meta_data"))
 meta <- read.csv("Model_Meta.csv")
 head(meta)
@@ -184,7 +184,7 @@ tz(meta$Ob_Start) <- "UTC"
 tz(meta$Ob_End) <- "UTC"
 
 ### SAVE META DATAFRAME
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/"
+start_path <- "..."
 setwd(paste0(start_path,"meta_data"))
 save(meta, file="meta_data.RDATA")
 
@@ -195,11 +195,11 @@ save(meta, file="meta_data.RDATA")
 ###################################################
 # Required input:   - Meta data
 #                   - Annotated (scored) behaviour data
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/"
+start_path <- "..."
 setwd(paste0(start_path,"meta_data"))
 load("meta_data.RDATA")
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 load("anno_data.RDATA")
 
@@ -223,7 +223,7 @@ df <- df %>% select(-Ob_Start,-Ob_End)
 ### SAVE ANNOMETA DATAFRAME
 dfAnnoMeta <- df
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 save(dfAnnoMeta, file= "MetaAnno_data.RDATA")
 
@@ -233,11 +233,11 @@ save(dfAnnoMeta, file= "MetaAnno_data.RDATA")
 #######################################################
 # Required input:   - Meta data
 #                   - Accelerometer data
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/"
+start_path <- "..."
 setwd(paste0(start_path,"meta_data"))
 load("meta_data.RDATA")
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 load("accel_data.RDATA")
 
@@ -272,7 +272,7 @@ save(dfAcclMeta, file= "MetaAccl_data.RDATA")
 # Required input:   - MetaAnno data
 #                   - MetaAccl data
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 load("MetaAnno_data.RDATA")
 load("MetaAccl_data.RDATA")
@@ -287,7 +287,7 @@ dfCompl <- dfAcclMeta %>% left_join(dfAnnoMeta, by = c('Cat_id', 'Timestamp'))
 str(dfCompl)
 
 ### SAVE COMPLETE DATAFRAME
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 save(dfCompl, file= "Compl_data.RDATA")
 
@@ -297,7 +297,7 @@ save(dfCompl, file= "Compl_data.RDATA")
 #######################################################
 # Required input: - Complete data
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 load("Compl_data.RDATA")
 
@@ -332,7 +332,7 @@ dfCompl <- df
 dfCompl <- dfCompl %>% select(-Status)
 
 ### SAVE COMPLETE DATAFRAME
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 save(dfCompl, file= "Compl_data.RDATA")
 
