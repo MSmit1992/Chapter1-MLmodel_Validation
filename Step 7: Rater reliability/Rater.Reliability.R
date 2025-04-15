@@ -15,7 +15,7 @@ library(plyr);library(dplyr);library(tidyverse);library(lubridate); library(rgda
 ### STEP 1 - PREPARATION ANNOTATED DATA RATING 1 ###
 ####################################################
 # Required input: - Behaviour scoring data output for each cat - xlsx file
-start_path <- "C:/Users/20017948/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/"
+start_path <- "..."
 setwd(paste0(start_path,"annotated_data"))
 anno <- list.files(getwd(),pattern="*.xlsx")
 
@@ -91,7 +91,7 @@ Rater1 <- Rater1 %>% select(-Pen)
 Rater1 <- Rater1 %>% select(-Status)
 
 ### SAVE ANNOTATED DATAFRAME
-start_path <- "C:/Users/20017948/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/Rater_reliability/"
+start_path <- "..."
 setwd(paste0(start_path,"Processed_data"))
 save(Rater1, file="Rater1.RDATA")
 
@@ -101,7 +101,7 @@ save(Rater1, file="Rater1.RDATA")
 ### STEP 2 - PREPARATION ANNOTATED DATA RATING 2 ###
 ####################################################
 # Required input: - Behaviour scoring data output for each cat - xlsx file
-start_path <- "C:/Users/20017948/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/Rater_reliability/"
+start_path <- "..."
 setwd(paste0(start_path,"Annotated_data"))
 anno <- list.files(getwd(),pattern="*.xlsx")
 
@@ -180,7 +180,7 @@ Rater2 <- Rater2 %>% select(-Pen)
 Rater2 <- Rater2 %>% select(-Status)
 
 ### SAVE ANNOTATED DATAFRAME
-start_path <- "C:/Users/20017948/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/Rater_reliability/"
+start_path <- "..."
 setwd(paste0(start_path,"Processed_data"))
 save(Rater2, file="Rater2.RDATA")
 
@@ -192,7 +192,7 @@ save(Rater2, file="Rater2.RDATA")
 # Required input:   - Meta data
 #                   - Annotated (scored) behaviour data
 
-start_path <- "C:/Users/20017948/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/Rater_reliability/"
+start_path <- "..."
 setwd(paste0(start_path,"Processed_data"))
 load("Rater1.RDATA")
 load("Rater2.RDATA")
@@ -239,7 +239,7 @@ save(Rater.Rel, file= "Rater_reliability.RDATA")
 ##################################
 library(irr)
 
-start_path <- "C:/Users/20017948/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/Rater_reliability/"
+start_path <- "..."
 setwd(paste0(start_path,"Processed_data"))
 load("Rater_reliability.RDATA")
 
