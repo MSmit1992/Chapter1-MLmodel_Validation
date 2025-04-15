@@ -2,7 +2,9 @@
 # Validation of ML models to identify cat behaviour using accelerometer data
 Buiding predictive models to identify cat behaviour using accelerometers
 
-This study has been published: Smit, M., Ikurior, S. J., Corner-Thomas, R. A., Andrews, C. J., Draganova, I., & Thomas, D. G. (2023). The Use of Triaxial Accelerometers and Machine Learning Algorithms for Behavioural Identification in Domestic Cats (Felis catus): A Validation Study. Sensors (Basel, Switzerland), 23(16), 7165. [https://doi.org/10.3390/s23167165](https://doi.org/10.3390/s23167165)
+This study has been published: Smit, M., Ikurior, S. J., Corner-Thomas, R. A., Andrews, C. J., Draganova, I., & Thomas, D. G. (2023). The Use of Triaxial Accelerometers and Machine Learning Algorithms for Behavioural Identification in Domestic Cats (Felis catus): A Validation Study. Sensors (Basel, Switzerland), 23(16), 7165. [https://doi.org/10.3390/s23167165](https://doi.org/10.3390/s23167165
+
+All code is R-code
 
 *A lot of the code used for the Self-Organizing Maps was published on GitHub by [cclemente](https://github.com/cclemente) in the repository [Animal_accelerometry](https://github.com/cclemente/Animal_accelerometry.git).*
 
