@@ -18,7 +18,7 @@ registerDoParallel(16)
 ### FEATURE ENGINEERING                ###
 ##########################################
 # Required input: - Acceleration data from collar and harness mounted accelerometers - csv file(s)
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/raw_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Raw"))
 
 ### COLLAR
@@ -73,7 +73,7 @@ for(ii in 1:length(filenames)){
 rm(list=ls())
 
 ### HARNESS
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/raw_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Raw"))
 filenames <- (Sys.glob("*Harness.csv"))
 
