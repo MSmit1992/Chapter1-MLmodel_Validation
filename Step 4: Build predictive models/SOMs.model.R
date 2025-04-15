@@ -21,7 +21,7 @@ library(tidyverse);library(kohonen);library(data.table);library(caret);library(i
 #################################
 # Required input: - Collar dataset: Collar_B2 & Collar_B3 & Collar_B4
 #                 - Harness dataset: Harness_B2 & Harness_B3 & Harness_B4
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 
 ################################################################################ RF BEHAVIOURAL SELECTION
@@ -53,7 +53,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_collar1.rds")
 save(ssom, file="Model_SOM_collar1.RDATA")
@@ -82,7 +82,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe Model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_harness1.rds")
 save(ssom, file="Model_SOM_harness1.RDATA")
@@ -118,7 +118,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_collar2.rds")
 save(ssom, file="Model_SOM_collar2.RDATA")
@@ -147,7 +147,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe Model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_harness2.rds")
 save(ssom, file="Model_SOM_harness2.RDATA")
@@ -182,7 +182,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_collar3.rds")
 save(ssom, file="Model_SOM_collar3.RDATA")
@@ -211,7 +211,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe Model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_harness3.rds")
 save(ssom, file="Model_SOM_harness3.RDATA")
@@ -244,7 +244,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_collar4.rds")
 save(ssom, file="Model_SOM_collar4.RDATA")
@@ -273,7 +273,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe Model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_harness4.rds")
 save(ssom, file="Model_SOM_harness4.RDATA")
@@ -307,7 +307,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_collar5.rds")
 save(ssom, file="Model_SOM_collar5.RDATA")
@@ -336,7 +336,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe Model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_harness5.rds")
 save(ssom, file="Model_SOM_harness5.RDATA")
@@ -430,7 +430,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_collar5.rds")
 save(ssom, file="Model_SOM_collar5.RDATA")
@@ -459,7 +459,7 @@ ptab <- table(predictions = ssom.pred$predictions$Activity, Behaviour = df.test$
 ptab
 
 # Safe Model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(ssom, file="Model_SOM_harness5.rds")
 save(ssom, file="Model_SOM_harness5.RDATA")
