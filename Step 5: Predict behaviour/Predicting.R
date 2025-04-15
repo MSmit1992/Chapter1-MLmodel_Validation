@@ -14,7 +14,7 @@ library(tidyverse); library(caret); library(randomForest); library(kohonen)
 ### STEP 1 -  PREPARATION META DATA ###
 #######################################
 # Required input: - Meta data prediction
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/"
+start_path <- "..."
 setwd(paste0(start_path,"meta_data"))
 meta <- read.csv("Predict_Meta.csv")
 head(meta)
@@ -33,7 +33,7 @@ df$Ob_Start<-as.POSIXct(df$Ob_Start,format="%Y/%m/%d %H:%M:%S")
 df$Ob_End<-as.POSIXct(df$Ob_End,format="%Y/%m/%d %H:%M:%S")
 
 ### SAVE META DATAFRAME
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/Processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 meta <- df
 save(meta, file="pred_meta.RDATA")
@@ -43,11 +43,11 @@ save(meta, file="pred_meta.RDATA")
 #######################################################
 ### STEP 2 - MERGE META DATA AND ACCELEROMETER DATA ###
 #######################################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/Processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 load("pred_meta.RDATA")
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 load("accel_data.RDATA")
 
@@ -77,7 +77,7 @@ df <- df %>% select(-Ob_Start,-Ob_End)
 
 ### SAVE ACCLMETA DATAFRAME
 dfAcclMeta <- df
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 save(dfAcclMeta, file= "Pred_dataset.RDATA")
 
@@ -85,7 +85,7 @@ save(dfAcclMeta, file= "Pred_dataset.RDATA")
 ###############################
 ### STEP 3 - DATA SPLITTING ###
 ###############################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 load("Pred_dataset.RDATA")
 
@@ -101,7 +101,7 @@ pred.harness <- rename (pred.harness, ODBA=ODBA30_Mean)
 
 
 ### SAFE DATAFRAMES
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 save(pred.collar, file="predict.collar.RDATA")
 save(pred.harness, file="predict.harness.RDATA")
@@ -115,11 +115,11 @@ save(pred.harness, file="predict.harness.RDATA")
 ####################################
 ### RANDOM FOREST MODEL - COLLAR ###
 ####################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 load("predict.collar.RDATA")
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 
 ### Behaviour 1
@@ -144,7 +144,7 @@ load("Model_RF_collar5.RDATA")
 pred.collar$C.RF5 <- predict(model.collar,pred.collar,type="raw")
 
 ### SAFE PRED.COLLAR
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 save(pred.collar, file="predict.collar.RDATA")
 
@@ -154,11 +154,11 @@ rm(list=ls())
 #####################################
 ### Self Organizing Maps - COLLAR ###
 #####################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 load("predict.collar.RDATA")
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 
 ### Behaviour 1
@@ -247,7 +247,7 @@ pred.collar$C.SOM5 <- ssom.pred$predictions$Activity
 
 
 ### SAFE PRED.COLLAR
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 save(pred.collar, file="predict.collar.RDATA")
 
@@ -257,7 +257,7 @@ rm(list=ls())
 #####################################
 ### RANDOM FOREST MODEL - HARNESS ###
 #####################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 load("predict.harness.RDATA")
 
@@ -285,7 +285,7 @@ load("Model_RF_harness5.RDATA")
 pred.harness$H.RF5 <- predict(model.harness,pred.harness,type="raw")
 
 ### SAFE PRED.HARNESS
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 save(pred.harness, file="predict.harness.RDATA")
 
@@ -295,11 +295,11 @@ rm(list=ls())
 #####################################
 ### Self Organizing Maps - HARNESS ###
 #####################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 load("predict.harness.RDATA") #Load dataset containing predictor variables Harness
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 
 ### Behaviour 1
@@ -389,7 +389,7 @@ pred.harness$H.SOM5 <- ssom.pred$predictions$Activity
 rm(ssom)
 
 ### SAFE PRED.HARNESS
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 save(pred.harness, file="predict.harness.RDATA")
 
@@ -399,11 +399,11 @@ save(pred.harness, file="predict.harness.RDATA")
 #####################################
 ### Self Organizing Maps - COLLAR ###
 #####################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 load("predict.collar.RDATA")
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Model_SOM"))
 
 ### Behaviour 2
@@ -423,7 +423,7 @@ ssom.pred <- predict(ssom, newdata=dat2$measurements,whatmap=1)
 pred.collar$C.SOM6 <- ssom.pred$predictions$Activity
 
 ### SAFE PRED.COLLAR
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 save(pred.collar, file="predict.collar.RDATA")
 
@@ -433,11 +433,11 @@ rm(list=ls())
 #####################################
 ### Self Organizing Maps - HARNESS ###
 #####################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 load("predict.harness.RDATA") #Load dataset containing predictor variables Harness
 
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Model_SOM"))
 
 ### Behaviour 2
@@ -457,7 +457,7 @@ ssom.pred <- predict(ssom, newdata=dat2$measurements,whatmap=1)
 pred.harness$H.SOM6 <- ssom.pred$predictions$Activity
 
 ### SAFE PRED.HARNESS
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Predictions"))
 save(pred.harness, file="predict.harness.RDATA")
 
