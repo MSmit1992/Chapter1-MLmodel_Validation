@@ -14,7 +14,7 @@ library(tidyverse); library(qwraps2); library(caret); library(randomForest); lib
 #################################
 # Required input: - Collar datasets
 #                 - Harness datasets
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Preparation"))
 
 ###################
@@ -44,7 +44,7 @@ print(Importance)
 plot(Importance)
 
 # Safe model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(model.collar, file="Model_RF_collar1.rds")
 save(model.collar, file="Model_RF_collar1.RDATA")
@@ -73,7 +73,7 @@ print(Importance)
 plot(Importance)
 
 # Safe Model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(model.harness, file="Model_RF_harness1.rds")
 save(model.harness, file="Model_RF_harness1.RDATA")
@@ -106,7 +106,7 @@ print(Importance)
 plot(Importance)
 
 # Safe model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(model.collar, file="Model_RF_collar2.rds")
 save(model.collar, file="Model_RF_collar2.RDATA")
@@ -135,7 +135,7 @@ print(Importance)
 plot(Importance)
 
 # Safe Model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(model.harness, file="Model_RF_harness2.rds")
 save(model.harness, file="Model_RF_harness2.RDATA")
@@ -169,7 +169,7 @@ print(Importance)
 plot(Importance)
 
 # Safe model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(model.collar, file="Model_RF_collar3.rds")
 save(model.collar, file="Model_RF_collar3.RDATA")
@@ -198,7 +198,7 @@ print(Importance)
 plot(Importance)
 
 # Safe Model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(model.harness, file="Model_RF_harness3.rds")
 save(model.harness, file="Model_RF_harness3.RDATA")
@@ -231,7 +231,7 @@ print(Importance)
 plot(Importance)
 
 # Safe model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(model.collar, file="Model_RF_collar4.rds")
 save(model.collar, file="Model_RF_collar4.RDATA")
@@ -260,7 +260,7 @@ print(Importance)
 plot(Importance)
 
 # Safe Model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(model.harness, file="Model_RF_harness4.rds")
 save(model.harness, file="Model_RF_harness4.RDATA")
@@ -293,7 +293,7 @@ print(Importance)
 plot(Importance)
 
 # Safe model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(model.collar, file="Model_RF_collar5.rds")
 save(model.collar, file="Model_RF_collar5.RDATA")
@@ -322,7 +322,7 @@ print(Importance)
 plot(Importance)
 
 # Safe Model
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 save(model.harness, file="Model_RF_harness5.rds")
 save(model.harness, file="Model_RF_harness5.RDATA")
@@ -332,7 +332,7 @@ save(model.harness, file="Model_RF_harness5.RDATA")
 #################################
 ### STEP 6 - CROSS VALIDATION ###
 #################################
-start_path <- "C:/Users/msmit1/OneDrive - Massey University/2.2 Study 1 - Validation ActiGraph/Data/MichelleSmit/Data/behaviour_data/processed_data/"
+start_path <- "..."
 setwd(paste0(start_path,"Models"))
 
 ### COLLAR
