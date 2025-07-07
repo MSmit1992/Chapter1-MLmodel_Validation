@@ -1,4 +1,3 @@
-
 # Validation of ML models to identify cat behaviour using accelerometer data
 Buiding predictive models to identify cat behaviour using accelerometers
 
@@ -37,3 +36,6 @@ The models were compared for the proportions of the behaviours they predicted. T
 
 # [Step 7: Rater reliability](https://github.com/MSmit1992/Chapter1-MLmodel_Validation/tree/main/Step%207%3A%20Rater%20reliability)
 Rater reliability was tested by rewatching some video recordings and rescoring the behaviour. This second scoring was then compared to the first scoring to determine rater reliability
+
+# Use of data
+This work is openly licensed via [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
